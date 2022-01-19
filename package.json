@@ -1,0 +1,13 @@
+{
+  "name": "@comartek/saf-t",
+  "version": "0.0.1",
+  "description": "signature for saf-t",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "jsrsasign": "^10.5.1"
+  }
+}
