@@ -4,10 +4,15 @@
   "description": "signature for saf-t",
   "main": "index.js",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "crypto": "^1.0.1",
     "jsrsasign": "^10.5.1"
-  }
+  },
+  "author": {
+    "name": "Trucdev",
+    "url": "https://github.com/trucdev"
+},
+  "homepage": "https://github.com/comartek/saf-t",
+  "license": "MIT",
+  "repository": "https://github.com/comartek/saf-t.git"
 }
