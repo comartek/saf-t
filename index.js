@@ -3,14 +3,14 @@ const { generateKeyPair: _generateKeyPair } = require('crypto');
 
 const { lineBreak } = require("./utils/line-break");
 
-function generateSignature(txt_string, privateKey) {
+function generateSignature(txt_string, privateKey, hasBreakLine = true) {
   // RSA signature generation
   var sig = new KJUR.crypto.Signature({ alg: "SHA1withRSA" });
   sig.init(privateKey);
   sig.updateString(txt_string);
   var hSigVal = sig.sign();
 
-  var signature = lineBreak(hextob64(hSigVal), 64);
+  var signature = hasBreakLine ? lineBreak(hextob64(hSigVal), 64) : hextob64(hSigVal);
 
   return signature;
 }

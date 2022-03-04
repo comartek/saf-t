@@ -1,6 +1,6 @@
 {
   "name": "@comartek/saf-t",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "signature for saf-t",
   "main": "index.js",
   "keywords": [],
